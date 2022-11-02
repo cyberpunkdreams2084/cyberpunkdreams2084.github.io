@@ -1,0 +1,172 @@
+/* Custom */
+.button {
+  color: rgba(255, 255, 255, .25);
+  border: 3px solid rgba(255, 255, 255, .1);
+  width:50%;
+  padding:20px;
+  display:inline-block;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, .15);
+  background-color:#111;
+}
+
+.splash {
+	margin-top:100px;
+	margin-bottom:0px;
+	text-align:center;
+}
+
+.splash2 {
+	text-align:center;
+	margin-bottom:100px;
+}
+
+.splash img {
+	width:80%;
+}
+
+.splash2 img {
+	width:80%;
+}
+
+.splashtitle img {
+	width:80%;
+}
+
+.brand {
+  width:100px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom:20px;
+  width:100px;
+}
+
+.logosub {
+  text-align: center;
+}
+
+h1 {
+display:none;
+}
+
+#convert {
+  margin-bottom:50px;
+}
+
+
+.masonry .brick img {
+  width:1024px;
+}
+
+.masonry .brick  {
+  text-align:center;
+}
+
+.blockmenu img {
+	margin-bottom: 10px;
+}
+
+#portfolio {
+	text-align:right;
+	padding-right:20px;
+	border-right:1px solid #333;
+}
+
+#matrix {
+	text-align:center;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#aesthetics {
+	text-align:left;
+	padding-left:20px;
+	border-left:1px solid #333;
+}
+
+.intro  a {
+  color: #aaa;
+}
+
+.intro  h3:nth-child(1) div a:hover {
+  color: #4fafe6;
+  filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
+}
+
+.intro  h3:nth-child(2) div a:hover {
+  color: #4fafe6;
+  filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(70deg);
+}
+
+.intro  h3:nth-child(3) div a:hover {
+  color: #4fafe6;
+  filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(-90deg);
+}
+
+/* Masonry on phones */
+@media only screen and (max-width: 768px) {
+  .masonry {
+    column-count: 1;
+  }
+  
+  .masonry.gutterless .brick {
+    margin-bottom: 1px;
+  }
+  
+/* Bordered masonry */
+.masonry.bordered {
+  column-rule: 1px solid #eee;
+  column-gap: 1px;
+}
+
+.masonry.bordered .brick {
+  padding-bottom: 0px;
+  margin-bottom: 1px;
+  border-bottom: 0;
+}
+  
+  body {
+    background: #202020;
+	color:#fff;
+  }
+  
+  h1 {
+	color:#888;
+  }
+  
+  h2 {
+	color:#666;
+  }
+  
+  h3 {
+	color:#fff;
+  }
+  
+  a {
+    color: #fff;
+  }
+
+
+#portfolio {
+	text-align:center;
+	border-right:0;
+}
+
+#matrix {
+	text-align:center;
+}
+
+#aesthetics {
+	text-align:center;
+	border-left:0;
+}
+  
+  
+}
