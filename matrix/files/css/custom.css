@@ -1,4 +1,13 @@
 /* Custom */
+
+body {
+  overflow: scroll; /* Show scrollbars */
+  background-image: url("../assets/bg.jpg");
+  background-size:100% 1400px; /* 593px; 893px, 1400!!, 100% */
+  background-repeat:no-repeat;
+  background-color: #000;
+}
+
 .button {
   color: rgba(255, 255, 255, .25);
   border: 3px solid rgba(255, 255, 255, .1);
@@ -13,6 +22,15 @@
   color: rgba(255, 255, 255, 1);
   border-color: rgba(255, 255, 255, .15);
   background-color:#111;
+}
+
+.splash2 img {
+  transition: all .3s ease-in-out;
+}
+
+.splash2  img:hover {
+  color: #4fafe6;
+  filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(190deg); /* 120, 190 */
 }
 
 .splash {
@@ -131,28 +149,6 @@ display:none;
   margin-bottom: 1px;
   border-bottom: 0;
 }
-  
-  body {
-    background: #202020;
-	color:#fff;
-  }
-  
-  h1 {
-	color:#888;
-  }
-  
-  h2 {
-	color:#666;
-  }
-  
-  h3 {
-	color:#fff;
-  }
-  
-  a {
-    color: #fff;
-  }
-
 
 #portfolio {
 	text-align:center;
