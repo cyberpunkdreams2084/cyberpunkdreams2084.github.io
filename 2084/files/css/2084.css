@@ -1,4 +1,13 @@
 /* Custom */
+
+body {
+  overflow: scroll; /* Show scrollbars */
+  background-image: url("../assets/bg.jpg");
+  background-size:100% 593px; /* 1300px!! */
+  background-repeat:no-repeat;
+  background-color: #000;
+}
+
 .logo {
   text-align: center;
 }
@@ -8,7 +17,6 @@ display:none;
 }
 
 .splash {
-	/* margin-top:150px; */
 	margin-bottom:40px;
 	text-align:center;
 }
@@ -79,38 +87,12 @@ display:none;
   width:90%;
 }
 
-
-  body {
-    background: #202020;
-	color:#fff;
-  }
-  
-  h1 {
-	color:#888;
-  }
-  
-  h2 {
-	color:#666;
-  }
-  
-  h3 {
-	color:#fff;
-  }
-  
-  a {
-    color: #fff;
-  }
-
-/*  
-  .intro {
-    display:none;
-  }
-  */
   h1,h2 {
   display:none;
   }
   
 .splash {
+	margin-top:-46px;
 	margin-bottom:40px;
 	text-align:center;
 }
@@ -133,5 +115,6 @@ display:none;
 	border-left:0;
 }
   
+
   
 }
