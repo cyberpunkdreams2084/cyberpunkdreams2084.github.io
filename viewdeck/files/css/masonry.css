@@ -5,10 +5,26 @@ body {
 }
 
 a {
-  color: #5b7083;
-  transition: all .25s ease-in-out;
+  color: #fff;
+  transition: all .3s ease-in-out;
 }
 
+h1 {
+  color:#888;
+}
+
+h2 {
+  color:#666;
+}
+
+h3 {
+  color:#fff;
+}
+
+h1,h2 {
+  display:none;
+}
+  
 /* The title */
 .title {
   font-weight: 700;
@@ -35,14 +51,6 @@ a {
   margin-bottom: 1.75em;
 }
 
-.intro a {
-  opacity: .7;
-}
-
-.intro a:hover {
-  opacity: 1;
-}
-
 .intro h3 {
   font-size: .825em;
   font-weight: 700;
@@ -67,30 +75,16 @@ a {
   margin-bottom: 30px;
   display: inline-block; /* Fix the misalignment of items */
   vertical-align: top; /* Keep the item on the very top */
-  min-width:100%;
 }
 
 /* Masonry image effects */
 .masonry .brick img {
   transition: all .5s ease-in-out;
   backface-visibility: hidden; /* Remove Image flickering on hover */
-  min-width:100%;
 }
 
 .masonry .brick:hover img {
   opacity: .75;
-}
-
-/* My default masonry */
-.masonry.default {
-  column-rule: 1px solid #222;
-  column-gap: 1px;
-}
-
-.masonry.default .brick {
-  padding-bottom: 0px;
-  margin-bottom: 1px;
-  border-bottom: 0;
 }
 
 /* Bordered masonry */
@@ -114,7 +108,7 @@ a {
   margin-bottom: 0;
 }
 
-/* Masonry on tablets */
+/* Masonry on phones */
 @media only screen and (max-width: 768px) {
   .masonry {
     column-count: 1;
@@ -123,6 +117,19 @@ a {
   .masonry.gutterless .brick {
     margin-bottom: 1px;
   }
+  
+/* Bordered masonry */
+.masonry.bordered {
+  column-rule: 1px solid #eee;
+  column-gap: 1px;
+}
+
+.masonry.bordered .brick {
+  padding-bottom: 0px;
+  margin-bottom: 1px;
+  border-bottom: 0;
+}
+
 }
 
 
@@ -131,6 +138,15 @@ a {
   .masonry {
     column-count: 2;
   }
+  
+  .masonry.bordered .brick {
+  border-bottom: 1px solid #303030;
+  }
+  
+  .masonry.bordered {
+  column-rule: 1px solid #303030;
+  }
+  
 }
 
 /* Masonry on big screens */
@@ -144,13 +160,26 @@ a {
   }
 
   .masonry {
-    column-count: 3;
+    column-count: 1;
   }
   .masonry.gutterless .brick {
     margin-bottom: 1px;
   }
- 
+  
+/* Bordered masonry */
+.masonry.bordered {
+  column-rule: 1px solid #222;
+  column-gap: 1px;
+}
+
+.masonry.bordered .brick {
+  padding-bottom: 0px;
+  margin-bottom: 1px;
+  border-bottom: 0;
+}
+
   .wrapper {
-    max-width:1024px;
+  width:1024px;
   }
+
 }
