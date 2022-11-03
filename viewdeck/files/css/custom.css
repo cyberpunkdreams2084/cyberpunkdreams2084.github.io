@@ -28,6 +28,14 @@ a {
 color: #fff;
 }
 
+.logo {
+  transition: all .3s ease-in-out;
+}
+
+.logo:hover {
+  filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(-90deg); /* 120, 190 */
+}
+
 .button {
   color: rgba(255, 255, 255, .25);
   border: 3px solid rgba(255, 255, 255, .1);
@@ -49,6 +57,12 @@ color: #fff;
   text-align: center;
 }
 
+/* Masonry on phones */
+@media only screen and (max-width: 768px) {
+  .logo {
+    width:70%;
+	}
+}
 
 
 
