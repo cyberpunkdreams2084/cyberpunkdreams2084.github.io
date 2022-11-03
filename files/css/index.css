@@ -1,6 +1,10 @@
 /* Custom */
 body {
   overflow: scroll; /* Show scrollbars */
+  background-image: url("../assets/bg.jpg");
+  background-size:100% 1200px; /* 593px, 1200px!! */
+  background-repeat:no-repeat;
+  background-color: #000;
 }
 
 .logo {
@@ -10,11 +14,28 @@ body {
 h1 {
 display:none;
 }
+  
+h1 {
+color:#888;
+}
+
+h2 {
+color:#666;
+}
+
+h3 {
+color:#fff;
+}
+
+a {
+color: #fff;
+}
 
 .splash {
 	margin-top:100px;
 	margin-bottom:100px;
 	text-align:center;
+	
 }
 
 .splash img {
@@ -91,27 +112,6 @@ display:none;
   margin-bottom: 1px;
   border-bottom: 0;
 }
-  
-  body {
-    background: #202020;
-	color:#fff;
-  }
-  
-  h1 {
-	color:#888;
-  }
-  
-  h2 {
-	color:#666;
-  }
-  
-  h3 {
-	color:#fff;
-  }
-  
-  a {
-    color: #fff;
-  }
 
 /*  
   .intro {
