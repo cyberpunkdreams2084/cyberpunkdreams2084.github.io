@@ -1,29 +1,11 @@
 /* Custom */
 
-.button {
-  color: rgba(255, 255, 255, .25);
-  border: 3px solid rgba(255, 255, 255, .1);
-  width:50%;
-  padding:20px;
-  display:inline-block;
-}
-
-.button:hover,
-.button:active,
-.button:focus {
-  color: rgba(255, 255, 255, 1);
-  border-color: rgba(255, 255, 255, .15);
-  background-color:#111;
-}
-
-
-.logo {
-  text-align: center;
-}
-
 body {
-background: #202020;
-color:#fff;
+  overflow: scroll; /* Show scrollbars */
+  background-image: url("../assets/bg-dark2.jpg");
+  background-size:100% 1200px; /* 593px; 600px; 893px, 1000px; 1200px!!, 1400px; 100%;*/
+  background-repeat:no-repeat;
+  background-color: #000;
 }
 
 h1, h2 {
@@ -45,3 +27,28 @@ color:#fff;
 a {
 color: #fff;
 }
+
+.button {
+  color: rgba(255, 255, 255, .25);
+  border: 3px solid rgba(255, 255, 255, .1);
+  width:50%;
+  padding:20px;
+  display:inline-block;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, .15);
+  background-color:#111;
+}
+
+
+.logo {
+  text-align: center;
+}
+
+
+
+
