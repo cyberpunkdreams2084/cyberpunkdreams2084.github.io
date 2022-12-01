@@ -267,6 +267,10 @@ section {
 
 /* Masonry on phones */
 @media only screen and (max-width: 768px) {
+  .step {
+	width:70%;
+  }
+  
   .masonry {
     column-count: 1;
   }

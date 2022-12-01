@@ -236,3 +236,67 @@ font-family: 'Assistant', sans-serif;
     background-position: 0 0;
   }
 }
+
+@media screen and (max-width:768px) {
+	.navbar {
+		margin-bottom: 0px;
+		}
+		
+	.splash {
+		margin-top:0px;
+	}
+
+	.splash img {
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+
+	.brand  {
+		width:100px;
+		height:auto;
+	}
+
+	.box {
+		width:75%;
+		background-size: 100% auto;
+	}
+	
+	.or  {
+		position:relative;
+		display: flex;
+		width:100%;
+		text-align:center;
+		justify-content: center;
+
+	}
+
+}
+
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.box {
+		width:40%;
+	}
+	.masonry {
+		column-count: 2;
+	}
+	.masonry.gutterless .brick {
+		margin-bottom: 1px;
+	}
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+	.box {
+		width:30%;
+	}
+	
+	.masonry {
+		column-count: 3;
+	}
+	.masonry.gutterless .brick {
+		margin-bottom: 1px;
+	}
+}
