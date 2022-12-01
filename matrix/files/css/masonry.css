@@ -28,7 +28,7 @@ h3 {
 
 /* The description */
 .desc {
-  font-size: 1em;
+  font-size: 1.5em;
   font-style: italic;
   font-family: Georgia, serif;
 }
@@ -48,11 +48,12 @@ h3 {
 }
 
 .intro h3 {
-  font-size: .825em;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+  /* text-transform: uppercase; */
   display: inline-block;
   margin: .25em .75em .75em;
+  color:#ccc;
 }
 
 .intro h3 a {
@@ -106,6 +107,19 @@ h3 {
 
 /* Masonry on phones */
 @media only screen and (max-width: 768px) {
+  .desc {
+    font-size: 1em;
+  }
+  
+.intro h3 {
+  font-size: .75em;
+  font-weight: 400;
+  /* text-transform: uppercase; */
+  display: inline-block;
+  margin: .25em .75em .75em;
+  color:#ccc;
+}
+
   .masonry {
     column-count: 1;
   }
@@ -147,7 +161,7 @@ h3 {
 /* Masonry on big screens */
 @media only screen and (min-width: 1024px) {
   .desc {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   .intro {
