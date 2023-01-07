@@ -1,0 +1,108 @@
+/* Custom */
+
+body {
+  overflow: scroll; /* Show scrollbars */
+  background-image: url("");
+  background-size:80% auto; /* 1300px!! */
+  background-repeat:no-repeat;
+  background-color: #1e0626;
+  background-position: center 0px;
+  margin:0px;
+}
+
+.logo {
+  text-align: center;
+ 
+}
+
+h1 {
+display:none;
+}
+
+.splash {
+	margin:0px;
+	text-align:center;
+	border:0px solid #000;
+}
+
+.splash img {
+	width:80%;
+}
+
+.intro  {
+  display:none;
+}
+
+.masonry .brick img {
+  width:80%;
+  border:0px solid #000;
+  margin:0px;
+}
+
+.masonry .brick  {
+  text-align:center;
+}
+
+.blockmenu img {
+	margin-bottom: 10px;
+}
+
+.intro  div:nth-child(1) a {
+  color: #fff;
+}
+
+.intro  div:nth-child(1) a:hover {
+  color: #4fafe6;
+}
+
+/* Masonry on phones */
+@media only screen and (max-width: 768px) {
+  .masonry {
+    column-count: 1;
+  }
+  
+/* Bordered masonry */
+.masonry.bordered {
+  column-rule: 1px solid #eee;
+  column-gap: 1px;
+  text-align:center;
+}
+
+.masonry.bordered .brick {
+  padding-bottom: 0px;
+  margin-bottom: 40px;
+  border-bottom: 0;
+  width:100%;
+}
+
+  h1,h2 {
+  display:none;
+  }
+  
+.splash {
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align:center;
+}
+  
+.splash img {
+	width:100%;
+}
+
+#portfolio {
+	text-align:center;
+	border-right:0;
+}
+
+#matrix {
+	text-align:center;
+}
+
+#aesthetics {
+	text-align:center;
+	border-left:0;
+}
+  
+
+  
+}
