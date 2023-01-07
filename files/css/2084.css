@@ -2,11 +2,12 @@
 
 body {
   overflow: scroll; /* Show scrollbars */
-  background-image: url("");
-  background-size:80% auto; /* 1300px!! */
+  background-image: url("../assets/1.png");
+  background-size:100% auto; /* 1300px!! */
   background-repeat:no-repeat;
   background-color: #1e0626;
   background-position: center 0px;
+  background-attachment: fixed;
   margin:0px;
 }
 
