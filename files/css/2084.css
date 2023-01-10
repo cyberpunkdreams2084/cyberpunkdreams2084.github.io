@@ -1,7 +1,6 @@
 /* Custom */
 
 body {
-  overflow: scroll; /* Show scrollbars */
   background-image: url("../assets/1.png");
   background-size:cover;
   background-repeat:no-repeat;
