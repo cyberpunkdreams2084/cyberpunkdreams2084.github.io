@@ -3,7 +3,7 @@
 body {
   overflow: scroll; /* Show scrollbars */
   background-image: url("../assets/1.png");
-  background-size:100% auto; /* 1300px!! */
+  background-size:cover;
   background-repeat:no-repeat;
   background-color: #1e0626;
   background-position: center 0px;
@@ -11,11 +11,7 @@ body {
   margin:0px;
 }
 
-iframe {
-	position:fixed;
-	bottom:0;
-	left:0;
-}
+
 
 .logo {
   text-align: center;
@@ -64,52 +60,78 @@ display:none;
 
 /* Masonry on phones */
 @media only screen and (max-width: 768px) {
-  .masonry {
-    column-count: 1;
-  }
-  
-/* Bordered masonry */
-.masonry.bordered {
-  column-rule: 1px solid #eee;
-  column-gap: 1px;
-  text-align:center;
+	  .masonry {
+		column-count: 1;
+	  }
+	  
+	/* Bordered masonry */
+	.masonry.bordered {
+	  column-rule: 0px solid #eee;
+	  column-gap: 0px;
+	  text-align:center;
+	}
+
+	.masonry.bordered .brick {
+	  padding-bottom: 0px;
+	  margin-bottom: 0px;
+	  border-bottom: 0;
+	  width:100%;
+	}
+
+	  h1,h2 {
+	  display:none;
+	  }
+	  
+	.splash {
+		margin-top:0px;
+		margin-bottom:0px;
+		text-align:center;
+		width:100%;
+	}
+	  
+	.splash img {
+		width:100%;
+	}
+
+	.masonry .brick img {
+		width:100%;
+		border:0px solid #000;
+		margin:0px;
+	}
+
+	.container {
+		margin-left:190px;
+	}
+	  
 }
 
-.masonry.bordered .brick {
-  padding-bottom: 0px;
-  margin-bottom: 40px;
-  border-bottom: 0;
-  width:100%;
+
+
+/* Masonry on big screens */
+@media only screen and (max-width: 1900px) {
+	.container {
+		margin-left:190px;
+	}
+	
+	.splash {
+		margin-top:0px;
+		margin-bottom:0px;
+		text-align:center;
+		width:100%;
+	}
+	  
+	.splash img {
+		width:100%;
+	}
+
+	.masonry .brick img {
+		width:100%;
+		border:0px solid #000;
+		margin:0px;
+	}
 }
 
-  h1,h2 {
-  display:none;
-  }
-  
-.splash {
-	margin-top:0px;
-	margin-bottom:0px;
-	text-align:center;
-}
-  
-.splash img {
-	width:100%;
-}
+/* Masonry on big screens */
+@media only screen and (min-width: 1920px) {
 
-#portfolio {
-	text-align:center;
-	border-right:0;
-}
-
-#matrix {
-	text-align:center;
-}
-
-#aesthetics {
-	text-align:center;
-	border-left:0;
-}
-  
-
-  
 }
